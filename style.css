@@ -1,0 +1,76 @@
+/***************** Style Général *****************/
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+body {
+    max-width: 1440px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/***************** HEADER *****************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+
+.img-logo {
+    width: 60px;
+}
+
+.lien-navbar:nth-child(1) {
+    margin-right: 50px;
+}
+
+.lien-navbar {
+    padding-top: 23px;
+    text-transform: capitalize;
+}
+
+.lien-navbar:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
+
+/******************** RESPONSIVE TELEPHONE ********************/
+@media screen and (max-width: 500px) {
+    /***************** HEADER *****************/
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .img-logo {
+        margin: 30px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+    }
+
+    .lien-navbar:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .lien-navbar {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+
+    .lien-navbar:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+}
