@@ -8,6 +8,7 @@
 
 body {
     max-width: 1440px;
+    padding: 0px 50px;
 }
 
 a{
@@ -18,7 +19,7 @@ a{
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 25px 50px;
+    padding: 25px 0px;
 }
 
 .img-logo {
@@ -37,12 +38,61 @@ a{
 .lien-navbar:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    font-weight: bold;
 }
 
+/***************** INFO GROUP *****************/
+.info-group {
+    padding: 25px 0;
+}
 
+.h1-info-group {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.formulaire-recherche {
+    padding: 25px 0;
+}
+
+.label-form {
+    background-color: #F2F2F2;
+    padding: 13px 12px 11px 16px;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-form {
+    margin: -5px;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+}
+
+.input-form:focus{
+    outline: none;
+}
+
+.button-form {
+    background-color: #0065FC; 
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: 11px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass::before {
+    display: none;
+}
 
 /******************** RESPONSIVE TELEPHONE ********************/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
     /***************** HEADER *****************/
     .header {
         flex-direction: column;
@@ -72,5 +122,22 @@ a{
     .lien-navbar:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
+    }
+
+    /***************** INFO GROUP *****************/
+    .fa-magnifying-glass::before {
+        background-color: #0065FC; 
+        border-radius: 0 15px 15px 0;
+        border: 1px solid #0065FC;
+        cursor: pointer;
+        padding: 13px;
+        padding-bottom: 12px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+    .button-form  {
+        display: none;
     }
 }
