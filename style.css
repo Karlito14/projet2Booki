@@ -158,7 +158,7 @@ i {
     border-radius: 15px;
     background-color: #F2F2F2;
     padding: 30px;
-    width: 100%;
+    width: 80%;
     margin-right: 40px;
 }
 
@@ -169,17 +169,21 @@ i {
 .div-hebergements {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    gap : 15px;
+    gap: 20px;
     position: relative;
 }
 
 .article-hebergement {
-    margin-bottom: 30px;
     padding: 10px;
     background-color: #fff;
     border-radius: 15px;
     position: relative;
-    height: 235px;
+    height: 250px;
+    transition: all 0.3s;
+}
+
+.article-hebergement:hover{
+    transform: scale(1.05);
 }
 
 
@@ -206,6 +210,11 @@ i {
     font-weight: bold;
 }
 
+.lien-hebergements {
+    display: block;
+    margin-top: 30px;
+}
+
 .div-etoiles{
     position: absolute;
     bottom: 7px;
@@ -213,10 +222,12 @@ i {
 
 .star-bleu {
     color: #0065FC;
+    filter: drop-shadow(0 0 0.2rem #0065FC)
 }
 
 .star-gris {
     color: #f2f2f2;
+    filter: drop-shadow(0 0 0.2rem gray);
 }
 
 /***************** ASIDE *****************/
@@ -224,7 +235,45 @@ i {
     border-radius: 15px;
     background-color: #F2F2F2;
     padding: 25px;
-    width: 30%;
+    width: 35%;
+}
+
+.div-titre-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-populaire {
+    color: #0065FC;
+    margin-left: 20px;
+}
+
+.div-hebergements-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+
+.article-populaire {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    height: 150px;
+}
+
+.img-populaire{
+    height: 100%;
+    object-fit: cover;
+    width: 32%;
+    border-radius: 20px 0 0 20px;
+}
+
+.div-info-populaire {
+    position: relative;
 }
 
 
