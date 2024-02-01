@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     color: #000;
+    box-sizing: border-box;
 }
 
 body {
@@ -170,7 +171,6 @@ i {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    position: relative;
 }
 
 .article-hebergement {
@@ -180,6 +180,7 @@ i {
     position: relative;
     height: 250px;
     transition: all 0.3s;
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
 }
 
 .article-hebergement:hover{
@@ -263,6 +264,7 @@ i {
     border-radius: 20px;
     padding: 8px;
     height: 150px;
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
 }
 
 .img-populaire{
@@ -296,6 +298,41 @@ i {
 
     .li-filtres:last-of-type {
         margin-right: 0;
+    }
+
+    /***************** HEBERGEMENTS *****************/
+    .main-hebergements {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .section-hebergements {
+        margin-right: 0;
+    }
+
+    .article-hebergement {
+        height: 230px;
+    }
+
+    .aside-hebergements, .section-hebergements {
+        width: 100%;
+    }
+
+    .aside-hebergements {
+        margin-top: 30px;
+    }
+
+    .div-hebergements-aside {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lien-article-populaire {
+        width: 30%;
+    }
+
+    .article-populaire {
+        height: 180px;
     }
 }
 
@@ -378,5 +415,42 @@ i {
     .li-filtres {
         margin: 0;
         font-size: 14px;
+        padding: 10px 7px;
+    }
+
+    .icon-filtres {
+        margin-right: 5px;
+    }
+
+    /***************** HEBERGEMENTS *****************/
+    .main-hebergements {
+        flex-direction: column-reverse;
+    }
+
+    .aside-hebergements {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .div-hebergements-aside {
+        flex-direction: column;
+    }
+
+    .lien-article-populaire {
+        width: 100%;
+    }
+
+    .lien-article-populaire:nth-of-type(2) {
+        margin: 20px 0;
+    }
+
+    .section-hebergements {
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    .div-hebergements {
+        display: flex;
+        flex-direction: column;
     }
 }
