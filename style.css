@@ -8,8 +8,9 @@
 
 body {
     max-width: 1440px;
-    padding: 0px 50px;
-    min-width: 320px
+    padding: 0px 40px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 a{
@@ -145,6 +146,87 @@ i {
     border-radius: 50%;
     font-size: 16px;
 }
+
+/***************** HEBERGEMENTS *****************/
+
+.main-hebergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-hebergements {
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 30px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.titre-hebergements {
+    margin-bottom: 20px;
+}
+
+.div-hebergements {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 15px;
+    position: relative;
+}
+
+.article-hebergement {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    height: 235px;
+}
+
+
+.img-hebergement {
+    border-radius: 15px 15px 0 0;
+    height: 124px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titre-article {
+    margin: 10px 0;
+}
+
+.p-article{
+    margin-bottom: 10px;
+}
+
+.titre-article, .p-article, .div-etoiles {
+    padding-left: 10px;
+}
+
+.euro-gras, .lien-hebergements{
+    font-weight: bold;
+}
+
+.div-etoiles{
+    position: absolute;
+    bottom: 7px;
+}
+
+.star-bleu {
+    color: #0065FC;
+}
+
+.star-gris {
+    color: #f2f2f2;
+}
+
+/***************** ASIDE *****************/
+.aside-hebergements {
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 25px;
+    width: 30%;
+}
+
 
 /******************** RESPONSIVE TABLETTE ********************/
 @media screen and (max-width: 1023px) {
