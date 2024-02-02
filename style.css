@@ -349,7 +349,7 @@ i {
     }
 
     .article-hebergement {
-        height: 230px;
+        height: 250px;
     }
 
     .aside-hebergements, .section-hebergements {
@@ -370,7 +370,7 @@ i {
     }
 
     .article-populaire {
-        height: 180px;
+        height: 210px;
     }
 
     /***************** ACTIVITES *****************/
@@ -496,5 +496,13 @@ i {
     .div-hebergements {
         display: flex;
         flex-direction: column;
+    }
+
+    /***************** ACTIVITES *****************/
+    .div-activites {flex-direction: column;}
+
+    .lien-activites{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
