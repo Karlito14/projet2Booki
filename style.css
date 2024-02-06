@@ -121,7 +121,7 @@ i {
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .li-filtres:hover {
