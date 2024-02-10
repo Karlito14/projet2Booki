@@ -34,7 +34,7 @@ i {
 }
 
 /******************** RESPONSIVE TABLETTE ********************/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     /***************** FILTRES *****************/
     .div-filtres {
         flex-direction: column;
@@ -86,7 +86,7 @@ i {
     }
 
     .article-populaire {
-        height: 210px;
+        height: 217px;
     }
 
     /***************** ACTIVITES *****************/
