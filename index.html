@@ -17,7 +17,7 @@
       rel="stylesheet"
     >
     <!-- - - - - - - - -    Fichier CSS   - - - - - - - - -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <!-- - - - - - - - -    Header   - - - - - - - - -->
@@ -51,7 +51,7 @@
           class="input-form"
           placeholder="Marseille, France"
           autocomplete="off"
-          pattern="[a-zA-Z ]+"
+          pattern="^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$"
           title="Veuillez renseigner une ville"
           required
         >

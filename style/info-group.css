@@ -1,0 +1,168 @@
+/***************** INFO GROUP *****************/
+.info-group {
+    padding: 25px 0;
+}
+
+.h1-info-group {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.formulaire-recherche {
+    padding: 25px 0;
+    margin: 20px 0;
+}
+
+.label-form {
+    background-color: #F2F2F2;
+    padding: 13px 12px 11px 16px;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-form {
+    margin: -5px;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+}
+
+.input-form:focus{
+    outline: none;
+}
+
+.button-form {
+    background-color: #0065FC; 
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: 11px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass::before {
+    display: none;
+}
+
+.div-filtres {
+    display: flex;
+    align-items: center;
+}
+
+.titre-filtres {
+    margin-right: 30px;
+}
+
+.ul-filtres {
+    display: flex;
+    align-items: center;
+}
+
+.li-filtres {
+    font-size: 17px;
+    margin-right: 30px;
+    padding: 10px 15px;
+    border: 2px solid #D9D9D9;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.li-filtres:hover {
+    background-color: #DEEBFF;
+}
+
+.icon-filtres{
+    display: block;
+    margin-right: 7px;
+    color: #0065FC;
+    font-size: 17px;
+}
+
+.info {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon-infos {
+    border: 1px solid #D9D9D9;
+    padding: 6px 11px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+    .div-filtres {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .titre-filtres {
+        margin-bottom: 20px;
+    }
+
+    .li-filtres {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .li-filtres:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /***************** INFO GROUP *****************/
+    .info-group {
+        margin: 0 20px;
+    }
+
+    .formulaire-recherche{
+        text-align: center;
+    }
+
+    .input-form {
+        width: 60%;
+    }
+
+    .fa-magnifying-glass::before {
+        background-color: #0065FC; 
+        border-radius: 0 15px 15px 0;
+        border: 1px solid #0065FC;
+        cursor: pointer;
+        padding: 13px;
+        padding-bottom: 12px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+    .button-form  {
+        display: none;
+    }
+
+    .div-liste-filtres{
+        width: 100%;
+    }
+
+    .ul-filtres {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .li-filtres {
+        margin: 0;
+        font-size: 14px;
+        padding: 10px 7px;
+    }
+
+    .icon-filtres {
+        margin-right: 5px;
+    }
+}

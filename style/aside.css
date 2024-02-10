@@ -1,0 +1,46 @@
+/***************** ASIDE *****************/
+.aside-hebergements {
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 25px;
+    width: 35%;
+}
+
+.div-titre-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-populaire {
+    color: #0065FC;
+    margin-left: 20px;
+}
+
+.div-hebergements-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+
+.article-populaire {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    height: 150px;
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
+}
+
+.img-populaire{
+    height: 100%;
+    object-fit: cover;
+    width: 32%;
+    border-radius: 20px 0 0 20px;
+}
+
+.div-info-populaire {
+    position: relative;
+}

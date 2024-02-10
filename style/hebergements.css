@@ -1,0 +1,76 @@
+/***************** HEBERGEMENTS *****************/
+
+.main-hebergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-hebergements {
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 30px;
+    width: 80%;
+    margin-right: 40px;
+}
+
+.titre-hebergements {
+    margin-bottom: 20px;
+}
+
+.div-hebergements {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.article-hebergement {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    height: 250px;
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
+}
+
+.img-hebergement {
+    border-radius: 15px 15px 0 0;
+    height: 124px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titre-article {
+    margin: 10px 0;
+}
+
+.p-article{
+    margin-bottom: 10px;
+}
+
+.titre-article, .p-article, .div-etoiles {
+    padding-left: 10px;
+}
+
+.euro-gras, .lien-hebergements{
+    font-weight: bold;
+}
+
+.lien-hebergements {
+    display: block;
+    margin-top: 30px;
+}
+
+.div-etoiles{
+    position: absolute;
+    bottom: 7px;
+}
+
+.star-bleu {
+    color: #0065FC;
+    filter: drop-shadow(0 0 0.2rem #0065FC)
+}
+
+.star-gris {
+    color: #f2f2f2;
+    filter: drop-shadow(0 0 0.2rem gray);
+}
